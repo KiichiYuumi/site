@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.05em;
+}
+
+.margin {
+    width: 100%;
+    height: 100vh;
+}
+
+.tate {
+    text-align: left;
+    max-width: 100vmin; 
+    writing-mode: vertical-rl;
+    height: 85vh; 
+    margin: 0px auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    line-height: 1.8;
+    padding: 30px 40px 30px;
+    border: 2px solid #f3f3f3;
+    border-radius: 8px;
+}
+
+/*base*/
+#base {
+    background-color: #ffffff;
+    font-family: "Yu Mincho", "游明朝", "Hiragino Mincho ProN", serif;
+    color: #000000;
+    text-align: center;
+    margin:0px 0px 200px 0px
+}
+
+/*works*/
+#works {
+    max-width: 300px; 
+    margin: 0 auto;
+    text-align: left;
+    margin: 50px auto 0;
+    line-height: 1.2;
+}
+
+#works p {
+    font-size: 1em;
+    margin: 0px 0px 22px;
+    line-height: 1.2;
+}
+
+#works a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+    font-size: 0.75em;
+}
+
+#works a:hover {
+    color: #b9b9b9;
+    text-decoration: underline;
+}
+
+#works small {
+    font-size: 0.73em; 
+}
+
+#worksImg img {
+    width: 100vmin;
+    height: 100vmin;
+    object-fit: contain;
+}
+
+/*credit*/
+#credit {
+    color: #000000;
+    text-align: right;
+    font-size: 0.74em;
+    max-width: 300px; 
+    margin: 50px auto 0;
+}
+#credit a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+#credit a:hover {
+    color: #b9b9b9;
+    text-decoration: underline;
+}
+
+#credit small {
+    font-size: 0.87em; 
+}
+
+#credit button {
+    all: unset;
+    cursor: pointer;
+    color: #000000;
+    transition: color 0.3s ease; 
+}
+
+#credit button:hover {
+    color: #b9b9b9;
+    text-decoration: underline;
+}
