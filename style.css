@@ -27,6 +27,18 @@
     border-radius: 8px;
 }
 
+.tateNB {
+    text-align: left;
+    max-width: 100vmin; 
+    writing-mode: vertical-rl;
+    height: 85vh; 
+    margin: 0px auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    line-height: 1.8;
+    padding: 30px 40px 30px;
+}
+
 /*base　style*/
 #base {
     background-color: #ffffff;
