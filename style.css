@@ -2,16 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1.05em;
+    font-size: 105%;
 }
 
-/*margin　style of scroll div*/
+html {
+  min-height: 100%;
+  background-color: #ffffff;
+  animation: changeColor 2s ease forwards;
+  overflow-y: scroll;
+}
+
+/*margin　style スクロール用余白*/
 .margin {
     width: 100%;
     height: 100vh;
 }
 
-/*tate style of tate text*/
+/*tate style 縦書き*/
 .tate {
     text-align: left;
     max-width: 100vmin; 
@@ -26,7 +33,7 @@
     border: 2px solid #f3f3f3;
     border-radius: 8px;
 }
-
+/*borderのない縦書き*/
 .tateNB {
     text-align: left;
     max-width: 100vmin; 
@@ -39,83 +46,134 @@
     padding: 30px 40px 30px;
 }
 
-/*base　style*/
-#base {
-    background-color: #ffffff;
+/*base　style　背景設定*/
+.base {
     font-family: "Yu Mincho", "游明朝", "Hiragino Mincho ProN", serif;
     color: #000000;
     text-align: center;
     margin:0px 0px 200px 0px
 }
 
-/*works style of indexpage*/
-#works {
+/*works style　中央寄せ*/
+.works {
     max-width: 300px; 
     margin: 0 auto;
     text-align: left;
-    margin: 50px auto 0;
+    margin: 40px auto 0;
     line-height: 1.2;
 }
 
-#works p {
+.works p {
     font-size: 1em;
     margin: 0px 0px 22px;
     line-height: 1.2;
 }
 
-#works a {
+.works a {
     color: #000000;
     text-decoration: none;
     transition: color 0.3s ease; 
     font-size: 0.75em;
 }
 
-#works a:hover {
+.works a:hover {
     color: #b9b9b9;
     text-decoration: underline;
 }
 
-#works small {
+.works small {
     font-size: 0.73em; 
 }
 
-#worksImg img {
+.worksImg img {
     width: 100vmin;
     height: 100vmin;
     object-fit: contain;
 }
 
-/*credit style of indexpage*/
-#credit {
+.worksImgMob img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .worksImg {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .worksImgMob {
+        display: none;
+    }
+}
+
+/*Drafts style*/
+.drafts{
+    max-width: 400px; 
+    margin: 0 auto;
+    text-align: left;
+    margin: 40px auto 0;
+    padding: 0px 10px 0px 10px;
+    line-height: 0.95;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.drafts span{
+    font-size: 70%;
+    text-align: center;
+}
+
+.drafts a {
+    color: #313131;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+    font-size: 5em;
+}
+
+.drafts a:hover {
+    color: #b9b9b9;
+}
+
+.draft{
+    text-align: center;
+}
+
+/*credit style*/
+.credit {
     color: #000000;
     text-align: right;
     font-size: 0.74em;
     max-width: 300px; 
     margin: 50px auto 0;
 }
-#credit a {
+.credit a {
     color: #000000;
     text-decoration: none;
     transition: color 0.3s ease; 
 }
 
-#credit a:hover {
+.credit a:hover {
     color: #b9b9b9;
     text-decoration: underline;
 }
 
-#credit small {
+.credit small {
     font-size: 0.87em; 
 }
-
-#credit button {
+/*リンク風です。*/
+.credit button {
     all: unset;
     cursor: pointer;
     color: #000000;
     transition: color 0.3s ease; 
 }
 
-#credit button:hover {
+.credit button:hover {
     color: #b9b9b9;
     text-decoration: underline;
 }

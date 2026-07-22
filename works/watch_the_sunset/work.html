@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,45 @@
     <link rel="stylesheet" href="../../style.css">
     <link rel="icon" href="../../favicon.png" type="image/png">
     <style>
-    #base1 {
-    font-family: "Yu Mincho", "游明朝", "Hiragino Mincho ProN", serif;
-    text-align: center;
-    margin:0px 0px 200px 0px;
-    background-color: rgb(250, 43, 16);
-    color: rgb(255, 189, 90);
-}
+        .base1 {
+            font-family: "Yu Mincho", "游明朝", "Hiragino Mincho ProN", serif;
+            text-align: center;
+            margin: 0px 0px 200px 0px;
+            color: rgb(255, 189, 90);
+        }
 
-.tate1 {
-    text-align: left;
-    max-width: 100vmin; 
-    writing-mode: vertical-rl;
-    height: 85vh; 
-    margin: 0px auto;
-    overflow-x: auto;
-    overflow-y: hidden;
-    line-height: 1.8;
-    padding: 30px 40px 30px;
-}
-</style>
+        @keyframes changeColor {
+            to {
+                background-color: rgb(250, 43, 16);
+            }
+        }
+
+        .tate1 {
+            text-align: left;
+            max-width: 100vmin;
+            writing-mode: vertical-rl;
+            height: 85vh;
+            margin: 0px auto;
+            overflow-x: auto;
+            overflow-y: hidden;
+            line-height: 1.8;
+            padding: 30px 40px 30px;
+        }
+    </style>
 </head>
-<body id="base1">
-<div id="works" class="margin">
+
+<body class="base1">
+    <div class="works" class="margin">
         <a href="../../index.html">▷作品一覧へ</a><br><small>スクロールしてください。</small><br><br>
         <h1></h1>
-</div>
-<div class="tate1">
-    夕の空、暗む中は死になおせるのだと小さな喜びを見つける目
-</div>
+    </div>
+    <div class="margin"></div>
+    <div class="tate1">
+        夕の空、暗む中は死になおせるのだと小さな喜びを見つける目
+    </div>
 
-<script src="../../script.js"></script>
-<script src="script.js"></script>
+    <script src="../../script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
